@@ -11,6 +11,6 @@ A config.py file needs to be added to the working directory contain:
 
 python nucleotide.py -s [search phrase] -t [return type] -n [number of sequences] -o [output file] 
 
-Example: Retrieves 100 FASTA sequences for organism *Homo sapiens*
+**Example**: Retrieves 100 FASTA sequences for organism *Homo sapiens*
 
 python nucleotide.py -s "Homo sapiens[organism]" -t fasta -n 100 -o test.fasta
