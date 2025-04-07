@@ -3,7 +3,7 @@
 For downloading records from various NCBI databases.
 
 ## REQUIRED
-A config.py file needs to be added to the working directory contain:
+A config.py file needs to be added to the working directory must contain:
 
     email="ncbi_account_email"
     apikey="ncbi_account_apikey"
