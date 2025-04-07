@@ -4,6 +4,7 @@ For downloading records from various NCBI databases.
 
 ## REQUIRED
 A config.py file needs to be added to the working directory contain:
+
     1. NCBI email address.
     2. OPTIONAL NCBI api key obtained through NCBI account. Allows for more API requests per second.
 
