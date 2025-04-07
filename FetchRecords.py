@@ -14,6 +14,8 @@ class FetchRecords:
         default is GI numbers, 'acc' for accession numbers.
     rettype : str
         'genbank' to return GenBank record or 'fasta' to return FASTA records.
+    retmode : str
+        what type of file is returned 'text' or 'xml'.
     filename : str
         Name of output file.
 
