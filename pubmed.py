@@ -19,10 +19,11 @@ def main():
     parser = argparse.ArgumentParser(prog='pubmed', description='Retrieves articles from ncbi pubmed databases')
     parser.add_argument('-s', '--search')
     parser.add_argument('-n', '--retmax')
+    parser.add_argument('-o', '--output')
     args = parser.parse_args()
 
     primary_ids = SearchPrimaryID(db='pubmed', term=args.search, retmax=args.retmax)
-    records = FetchRecords(primary_ids=primary_ids, db='pubmed', rettype='medline', retmode='text', filename='pubmed_test.txt')
+    records = FetchRecords(primary_ids=primary_ids, db='pubmed', rettype='medline', retmode='text', filename=args.output)
 
 if __name__ == '__main__':
     main()
