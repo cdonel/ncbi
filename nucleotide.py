@@ -24,8 +24,8 @@ def main():
 
     Entrez.email = config.email
     Entrez.api_key = config.apikey
-    primary_ids = SearchPrimaryID(db='nucleotide', idtype='acc', term=args.search, retmax=args.retmax, retmode='text')
-    records = FetchRecords(primary_ids=primary_ids, db='nucleotide', idtype='acc', rettype=args.rettype, filename=args.output)
+    primary_ids = SearchPrimaryID(db='nucleotide', idtype='acc', term=args.search, retmax=args.retmax)
+    records = FetchRecords(primary_ids=primary_ids, db='nucleotide', idtype='acc', rettype=args.rettype, retmode='text', filename=args.output)
     sys.exit()
 
 if __name__ == '__main__':
