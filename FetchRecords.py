@@ -86,7 +86,7 @@ class FetchRecords:
             batch_size = count
             return batch_size
         
-        elif count > 100000:
+        elif count > 10000:
             batch_size = 10000
             return batch_size
         
