@@ -9,7 +9,7 @@ A config.py file needs to be added to the working directory contain:
 
 ## Retrieving Nucleotide records via command line using nucleotide.py
 
-python nucleotide.py -s [search phrase] -t [return type] -n [number of sequences] -o [output file] 
+python nucleotide.py **-s** [search phrase] **-t** [return type] **-n** [number of sequences] **-o** [output file] 
 
 **Example**: Retrieves 100 FASTA sequences for organism *Homo sapiens*
 
